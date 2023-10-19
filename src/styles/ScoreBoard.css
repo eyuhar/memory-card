@@ -1,0 +1,10 @@
+#score-board {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#score, #best-score {
+    display: flex;
+    justify-content: space-between;
+}

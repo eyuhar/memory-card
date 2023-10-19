@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #505050;
+    box-shadow: 1px 1px 4px 1px white;
+    transition: all 0.7s;
+}
+
+.card-overlay {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #505050;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.card-overlay-active {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.card:hover:after {
+    opacity: 1;
+}
+
+.card>img {
+    width: 144px;
+}
+
+.card>hr {
+    width: 100%;
+}
+
+.card-description {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
